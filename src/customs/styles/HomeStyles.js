@@ -1,0 +1,61 @@
+const styles = {
+  root: {
+    overflow: "hidden",
+    width: "100%",
+    height: "89vh",
+  },
+  bgImg: {
+    position: "absolute",
+    top: "1",
+    left: "0",
+    right: "0",
+    bottom: "0",
+    objectFit: "cover",
+    backgroundPosition: "center",
+    zIndex: "-10",
+    width: "100%",
+    height: "100%",
+  },
+  bgGradient: {
+    background: "rgba(0,0,0,.4)",
+    backgroundImage:
+      "linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%)",
+    top: "0",
+    bottom: "0",
+    right: "0",
+    left: "0",
+    zIndex: "-5",
+    position: "absolute",
+  },
+  content: {
+    color: "white",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    width: "100%",
+    height: "100%",
+    alignItems: "center",
+  },
+  input: {
+    outline: "none",
+    minWidth: "450px",
+    height: "60px !important",
+    padding: "10px 10px",
+    color: "#000",
+    boxSizing: "border-box",
+    fontSize: "1.5rem",
+    border: "solid 1px #8c8c8c",
+    borderRadius: "2px",
+  },
+  btn: {
+    boxShadow: "0 1px 0 rgba(0,0,0,.45)",
+    fontSize: "1.625rem",
+    minHeight: "61px",
+    padding: "0 01em",
+    backgroundImage: "linear-gradient(to bottom,#e50914,#db0510)",
+    color: "#fff",
+    backgroundColor: "#e50914",
+  },
+};
+
+export default styles;
