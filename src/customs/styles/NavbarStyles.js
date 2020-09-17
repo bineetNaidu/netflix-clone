@@ -3,8 +3,8 @@ const styles = {
     backgroundColor: "transparent",
     transition: "background-color .5s",
     position: "relative",
-    margin: "0 1rem",
-    padding: "20px 3.5rem 0 1rem",
+    margin: "0 auto",
+    padding: "20px 4rem 0 4rem",
     width: "100%",
     top: "0",
     left: "0",
@@ -18,9 +18,9 @@ const styles = {
   logo: {
     fill: "#e50914",
     lineHeight: "normal",
-    fontSize: "1rem",
+    fontSize: "3rem",
     height: "32px",
-    width: "108px",
+    width: "150px",
   },
   btns: {
     textDecoration: "none",
