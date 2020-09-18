@@ -77,15 +77,27 @@ function Main() {
   }, []);
 
   return (
-    <div>
-      <MainSidebar>
+    <>
+      <div style={{ backgroundColor: "#111" }}>
         {/* Banner  */}
         <MoviesLists movies={netOrgins} label="NETFLIX ORIGINALS" highlights />
-        {/* MoviesList (TV and series)*/}
-        {/* MoviesList (Hollywood) */}
-        {/* MovieCard */}
-      </MainSidebar>
-    </div>
+        <MoviesLists movies={trend} label="Trending Now" highlights={false} />
+        <MoviesLists movies={toprates} label="Top Rated" highlights={false} />
+        <MoviesLists movies={action} label="Action Movies" highlights={false} />
+        <MoviesLists movies={comedy} label="Comedy Movies" highlights={false} />
+        <MoviesLists movies={horror} label="Horror Movies" highlights={false} />
+        <MoviesLists
+          movies={romance}
+          label="Romance Movies"
+          highlights={false}
+        />
+        <MoviesLists
+          movies={documentary}
+          label="Documentaries"
+          highlights={false}
+        />
+      </div>
+    </>
   );
 }
 

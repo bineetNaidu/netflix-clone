@@ -1,18 +1,8 @@
 import React from "react";
 import { withStyles } from "@material-ui/styles";
 
-const styles = {
-  rootImg: {
-    objectFit: "contain",
-    marginRight: "10px",
-    width: "100%",
-    transition: "transform .45s",
-    "&:hover": {
-      transform: "scale(1.08)",
-      opacity: 1,
-    },
-  },
-};
+// Statics
+import styles from "./customs/styles/MovieStyles";
 
 function Movie({ src, txt, classes, highlights }) {
   return (
