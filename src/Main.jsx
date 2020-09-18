@@ -1,9 +1,16 @@
 import React from "react";
+import MainSidebar from "./MainSidebar";
 
 function Main() {
   return (
     <div>
-      <h1>Yo this is Main Page</h1>
+      <MainSidebar>
+        {/* head img  */}
+        {/* MoviesList (popular)*/}
+        {/* MoviesList (TV and series)*/}
+        {/* MoviesList (Hollywood) */}
+        {/* MovieCard */}
+      </MainSidebar>
     </div>
   );
 }
