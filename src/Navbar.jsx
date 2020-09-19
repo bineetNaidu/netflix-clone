@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
 
 // statics
 import styles from "./customs/styles/NavbarStyles";
 
-function Navbar({ classes }) {
+function Navbar({ classes, location }) {
   return (
     <div className={classes.root}>
       <div className={classes.logo}>
@@ -19,13 +19,23 @@ function Navbar({ classes }) {
           </g>
         </svg>
       </div>
-      <Link to="/signin" className={classes.btns}>
-        <Button variant="contained" color="secondary">
-          Sign In
-        </Button>
-      </Link>
+      {location.pathname === "/main" ? (
+        <Link to="/">
+          <img
+            className={classes.avatar}
+            src="https://pbs.twimg.com/profile_images/1240119990411550720/hBEe3tdn_400x400.png"
+            alt="Netflix Logo"
+          />
+        </Link>
+      ) : (
+        <Link to="/main" className={classes.btns}>
+          <Button variant="contained" color="secondary">
+            Sign In
+          </Button>
+        </Link>
+      )}
     </div>
   );
 }
 
-export default withStyles(styles)(Navbar);
+export default withRouter(withStyles(styles)(Navbar));

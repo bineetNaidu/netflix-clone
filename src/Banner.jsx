@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, memo } from "react";
 import { getApiData } from "./helpers";
 import { withStyles } from "@material-ui/styles";
 
@@ -40,4 +40,4 @@ function Banner({ classes, link }) {
   );
 }
 
-export default withStyles(styles)(Banner);
+export default memo(withStyles(styles)(Banner));

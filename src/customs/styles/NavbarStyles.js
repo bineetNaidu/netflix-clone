@@ -2,7 +2,7 @@ const styles = {
   root: {
     backgroundColor: "transparent",
     transition: "background-color .5s",
-    position: "relative",
+    position: "absolute",
     margin: "0 auto",
     padding: "20px 4rem 0 4rem",
     width: "100%",
@@ -18,12 +18,19 @@ const styles = {
   logo: {
     fill: "#e50914",
     lineHeight: "normal",
-    fontSize: "3rem",
-    height: "32px",
-    width: "150px",
+    fontSize: "2rem",
+    height: "35px",
+    width: "126px",
   },
   btns: {
     textDecoration: "none",
+  },
+  avatar: {
+    right: "40px",
+    width: "40px",
+    height: "40px",
+    position: "fixed",
+    objectFit: "contain",
   },
 };
 export default styles;

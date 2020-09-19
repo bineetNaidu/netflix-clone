@@ -1,7 +1,6 @@
 import React from "react";
 import { withStyles } from "@material-ui/styles";
 import { Typography } from "@material-ui/core";
-import Navbar from "./Navbar";
 
 // CUSTOMS
 import useFormState from "./customs/hooks/useFormState";
@@ -17,7 +16,6 @@ function Home({ classes }) {
   };
   return (
     <>
-      <Navbar />
       <div className={classes.root}>
         <div className={classes.content}>
           <Typography variant="h2" style={{ padding: "0.5rem 0" }}>

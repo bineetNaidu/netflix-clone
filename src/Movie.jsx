@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { withStyles } from "@material-ui/styles";
 
 // Statics
@@ -15,4 +15,4 @@ function Movie({ src, txt, classes, highlights }) {
   );
 }
 
-export default withStyles(styles)(Movie);
+export default memo(withStyles(styles)(Movie));

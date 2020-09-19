@@ -33,10 +33,10 @@ const styles = {
     },
   },
   desc: {
-    width: "45rem",
+    width: "50rem",
     lineHeight: "1.3",
     fontSize: ".8rem",
-    maxWidth: "360px",
+    maxWidth: "490px",
     height: "80px",
   },
   fadeBottom: {
