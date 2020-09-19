@@ -4,7 +4,7 @@ const styles = {
     objectFit: "contain",
     height: "448px",
     position: "relative",
-    backgroundPosition: "center center",
+    // backgroundPosition: "center center",
     backgroundSize: "cover",
   },
   content: {
@@ -34,15 +34,13 @@ const styles = {
   },
   desc: {
     width: "45rem",
-    backgroundColor: "rgba(51,51,51,.5)",
     lineHeight: "1.3",
-    paddingTop: "1rem",
     fontSize: ".8rem",
     maxWidth: "360px",
     height: "80px",
   },
   fadeBottom: {
-    height: "8.4rem",
+    height: "7.4rem",
     backgroundImage:
       "linear-gradient(180deg,transparent,rgba(37,37,37,.61),#111)",
     position: "absolute",

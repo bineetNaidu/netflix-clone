@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import MainSidebar from "./MainSidebar";
+// import MainSidebar from "./MainSidebar";
 import { getApiData, requests } from "./helpers";
 import MoviesLists from "./MoviesLists";
 import Banner from "./Banner";
@@ -80,7 +80,7 @@ function Main() {
   return (
     <>
       <div style={{ backgroundColor: "#111" }}>
-        <Banner movies={[...trend, ...netOrgins]} />
+        <Banner link={Trending} />
         <MoviesLists movies={netOrgins} label="NETFLIX ORIGINALS" highlights />
         <MoviesLists movies={trend} label="Trending Now" highlights={false} />
         <MoviesLists movies={toprates} label="Top Rated" highlights={false} />
