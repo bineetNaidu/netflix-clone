@@ -1,5 +1,5 @@
 const styles = {
-  root: { marginLeft: "20px", color: "#fff" },
+  root: { marginLeft: "20px", color: "#fff", marginTop: "1rem" },
   main: {
     display: "flex",
     overflowY: "hidden",

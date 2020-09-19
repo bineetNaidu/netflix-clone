@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import MainSidebar from "./MainSidebar";
 import { getApiData, requests } from "./helpers";
 import MoviesLists from "./MoviesLists";
+import Banner from "./Banner";
 
 function Main() {
   const {
@@ -79,7 +80,7 @@ function Main() {
   return (
     <>
       <div style={{ backgroundColor: "#111" }}>
-        {/* Banner  */}
+        <Banner movies={[...trend, ...netOrgins]} />
         <MoviesLists movies={netOrgins} label="NETFLIX ORIGINALS" highlights />
         <MoviesLists movies={trend} label="Trending Now" highlights={false} />
         <MoviesLists movies={toprates} label="Top Rated" highlights={false} />
