@@ -9,7 +9,7 @@ function Banner({ classes, link }) {
   const [movie, setMovie] = useState([]);
   useEffect(() => {
     const data = async () => {
-      const res = await getApiData(`http://api.themoviedb.org/3${link}`);
+      const res = await getApiData(`https://api.themoviedb.org/3${link}`);
       const idx = Math.floor(Math.random() * res.length);
       setMovie(res[idx]);
     };
