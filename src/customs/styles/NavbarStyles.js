@@ -2,7 +2,7 @@ const styles = {
   root: {
     backgroundColor: "transparent",
     transition: "background-color .5s",
-    position: "absolute",
+    position: "fixed",
     margin: "0 auto",
     padding: "20px 4rem 0 4rem",
     width: "100%",
@@ -29,7 +29,6 @@ const styles = {
     right: "40px",
     width: "40px",
     height: "40px",
-    position: "fixed",
     objectFit: "contain",
   },
 };

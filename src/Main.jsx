@@ -29,48 +29,50 @@ function Main() {
   useEffect(() => {
     const datas = async () => {
       // trending API
-      const trends = await getApiData(`http://api.themoviedb.org/3${Trending}`);
+      const trends = await getApiData(
+        `https://api.themoviedb.org/3${Trending}`
+      );
       setTrend(trends);
 
       // top rated API
       const topsrates = await getApiData(
-        `http://api.themoviedb.org/3${TopRated}`
+        `https://api.themoviedb.org/3${TopRated}`
       );
       setToprates(topsrates);
 
       // NetFlix Orginals API
       const netflixOrigins = await getApiData(
-        `http://api.themoviedb.org/3${NetflixOriginals}`
+        `https://api.themoviedb.org/3${NetflixOriginals}`
       );
       setNetOrgins(netflixOrigins);
 
       // Actions API
       const actions = await getApiData(
-        `http://api.themoviedb.org/3${ActionMovies}`
+        `https://api.themoviedb.org/3${ActionMovies}`
       );
       setAction(actions);
 
       // comedy API
       const comedies = await getApiData(
-        `http://api.themoviedb.org/3${ComedyMovies}`
+        `https://api.themoviedb.org/3${ComedyMovies}`
       );
       setComedy(comedies);
 
       // horros API
       const horrors = await getApiData(
-        `http://api.themoviedb.org/3${HorrorMovies}`
+        `https://api.themoviedb.org/3${HorrorMovies}`
       );
       setHorror(horrors);
 
       // romance API
       const romances = await getApiData(
-        `http://api.themoviedb.org/3${RomanceMovies}`
+        `https://api.themoviedb.org/3${RomanceMovies}`
       );
       setRomance(romances);
 
       // Documenttary API
       const docs = await getApiData(
-        `http://api.themoviedb.org/3${Documentaries}`
+        `https://api.themoviedb.org/3${Documentaries}`
       );
       setDocumentary(docs);
     };

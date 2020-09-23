@@ -1,6 +1,7 @@
 import React from "react";
 import Movie from "./Movie";
 import { withStyles } from "@material-ui/styles";
+import FlipMove from "react-flip-move";
 
 // Statics
 import styles from "./customs/styles/MoviesListsStyles";
@@ -10,19 +11,19 @@ function MoviesLists({ movies, label, classes, highlights }) {
   return (
     <div className={classes.root}>
       <h1>{label}</h1>
-      <div className={classes.main}>
+      <FlipMove className={classes.main}>
         {movies.map(
           (movie) =>
-            movie.backdrop_path !== null && (
+            movie.backdrop_path !== (null || undefined) && (
               <Movie
-                src={`${imgUrls}${movie.backdrop_path}`}
+                src={`${imgUrls}${movie.backdrop_path || movie.poster_path}`}
                 txt={movie.name}
                 key={movie.id}
                 highlights={highlights}
               />
             )
         )}
-      </div>
+      </FlipMove>
     </div>
   );
 }
